@@ -6,9 +6,6 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-/// @title An Auction Contract for bidding and selling single and batched NFTs
-/// @author Avo Labs GmbH
-/// @notice This contract can be used for auctioning any NFTs, and accepts any ERC20 token as payment
 contract NFTAuction {
     mapping(address => mapping(uint256 => Auction)) public nftContractAuctions;
     mapping(address => uint256) failedTransferCredits;
