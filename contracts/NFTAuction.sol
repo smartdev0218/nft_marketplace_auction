@@ -120,6 +120,15 @@ contract NFTAuction {
         uint128 newBuyNowPrice
     );
     event HighestBidTaken(address nftContractAddress, uint256 tokenId);
+    /**********************************/
+    /*╔═════════════════════════════╗
+      ║             END             ║
+      ║            EVENTS           ║
+      ╚═════════════════════════════╝*/
+    /**********************************/
+    /*╔═════════════════════════════╗
+      ║          MODIFIERS          ║
+      ╚═════════════════════════════╝*/
 
     modifier isAuctionNotStartedByOwner(
         address _nftContractAddress,
