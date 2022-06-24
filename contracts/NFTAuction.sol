@@ -228,6 +228,10 @@ contract NFTAuction {
         _;
     }
 
+    /*
+     * Payment is accepted if the payment is made in the ERC20 token or ETH specified by the seller.
+     * Early bids on NFTs not yet up for auction must be made in ETH.
+     */
     modifier paymentAccepted(
         address _nftContractAddress,
         uint256 _tokenId,
