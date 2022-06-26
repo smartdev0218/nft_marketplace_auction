@@ -26,9 +26,7 @@ contract NFTAuction {
         address[] feeRecipients;
         uint32[] feePercentages;
     }
-    /*
-     * Default values that are used if not specified by the NFT seller.
-     */
+    
     uint32 public defaultBidIncreasePercentage;
     uint32 public minimumSettableIncreasePercentage;
     uint32 public maximumMinPricePercentage;
