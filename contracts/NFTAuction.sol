@@ -197,10 +197,6 @@ contract NFTAuction {
         );
         _;
     }
-    /*
-     * The bid amount was either equal the buyNowPrice or it must be higher than the previous
-     * bid by the specified bid increase percentage.
-     */
     modifier bidAmountMeetsBidRequirements(
         address _nftContractAddress,
         uint256 _tokenId,
