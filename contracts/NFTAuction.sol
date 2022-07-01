@@ -302,14 +302,7 @@ contract NFTAuction {
         _;
     }
 
-    modifier isNotASale(address _nftContractAddress, uint256 _tokenId) {
-        require(
-            !_isASale(_nftContractAddress, _tokenId),
-            "Not applicable for a sale"
-        );
-        _;
-    }
-
+   
     /**********************************/
     /*╔═════════════════════════════╗
       ║             END             ║
