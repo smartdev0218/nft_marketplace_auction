@@ -307,18 +307,6 @@ contract NFTAuction {
             !_isASale(_nftContractAddress, _tokenId),
             "Not applicable for a sale"
         );
-        _;
-    }
-
-    /**********************************/
-    /*╔═════════════════════════════╗
-      ║             END             ║
-      ║          MODIFIERS          ║
-      ╚═════════════════════════════╝*/
-    /**********************************/
-    // constructor
-    constructor() {
-        defaultBidIncreasePercentage = 100;
         defaultAuctionBidPeriod = 86400; //1 day
         minimumSettableIncreasePercentage = 100;
         maximumMinPricePercentage = 8000;
