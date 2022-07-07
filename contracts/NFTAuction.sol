@@ -308,16 +308,6 @@ contract NFTAuction {
             "Not applicable for a sale"
         );
         _;
-    }
-
-    /**********************************/
-    /*╔═════════════════════════════╗
-      ║             END             ║
-      ║          MODIFIERS          ║
-      ╚═════════════════════════════╝*/
-    /**********************************/
-    // constructor
-    constructor() {
         defaultBidIncreasePercentage = 100;
         defaultAuctionBidPeriod = 86400; //1 day
         minimumSettableIncreasePercentage = 100;
