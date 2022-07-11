@@ -311,6 +311,11 @@ contract NFTAuction {
     }
 
     /**********************************/
+    /*╔═════════════════════════════╗
+      ║             END             ║
+      ║          MODIFIERS          ║
+      ╚═════════════════════════════╝*/
+    /**********************************/
     // constructor
     constructor() {
         defaultBidIncreasePercentage = 100;
