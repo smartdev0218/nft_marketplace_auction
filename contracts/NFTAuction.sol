@@ -312,6 +312,14 @@ contract NFTAuction {
 
     
     // constructor
+    constructor() {
+        defaultBidIncreasePercentage = 100;
+        defaultAuctionBidPeriod = 86400; //1 day
+        minimumSettableIncreasePercentage = 100;
+        maximumMinPricePercentage = 8000;
+    }
+
+    /*╔══════════════════════════════╗
       ║    AUCTION CHECK FUNCTIONS   ║
       ╚══════════════════════════════╝*/
     function _isAuctionOngoing(address _nftContractAddress, uint256 _tokenId)
